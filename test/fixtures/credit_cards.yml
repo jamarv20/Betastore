@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Customer: MyString
+  belongs_to: MyString
+  number: MyString
+  experation_date: MyString
+
+two:
+  Customer: MyString
+  belongs_to: MyString
+  number: MyString
+  experation_date: MyString

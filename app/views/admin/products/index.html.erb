@@ -1,0 +1,23 @@
+<h1>Products</h1>
+
+<p><%= link_to 'Add New Product', new_admin_product_path, class: 'btn btn-primary' %>
+</p>
+
+<table class="table table-hover">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Created At</th>
+  </tr>
+  <% for product in @products %>
+    <tr>
+      <td><%= link_to product.id, admin_product_path(product) %></td>
+      <td><%= product.name %></td>
+      <td><%= number_to_currency product.price %></td>
+      <td>
+      <%= product.created_at.strftime('%m/%d/%Y') %>
+      <%= time_ago_in_words product.created_at %> ago </td>
+    </tr>
+  <% end %>
+</table>

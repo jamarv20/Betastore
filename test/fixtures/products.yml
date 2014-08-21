@@ -1,0 +1,10 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+Hat:
+  name: Hat
+  price: 19.99
+  description: This is a Product
+Cost:
+  name: cost
+  price: 9.99
+  description: This is the Price
